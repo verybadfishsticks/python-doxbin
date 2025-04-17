@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataPastes - Share Your Data</title>
+    <link rel="stylesheet" href="/static/stle/orig.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DataPastes</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/recent">Recent Pastes</a></li>
+                    <li><a href="/create">Create New</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Share Your Data Quickly and Easily</h2>
+            <p>DataPastes lets you share code snippets, configuration files, logs, and more.</p>
+            <button class="btn-primary">Create New Paste</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Syntax Highlighting</h3>
+                <p>Support for over 100 programming languages and data formats</p>
+            </div>
+            <div class="feature-card">
+                <h3>Privacy Options</h3>
+                <p>Set expiration times or make pastes private with password protection</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy Sharing</h3>
+                <p>Generate short URLs for easy sharing across platforms</p>
+            </div>
+        </section>
+
+        <section class="recent-pastes">
+            <h2>Recent Public Pastes</h2>
+            <div class="paste-list" id="recent-pastes-container">
+                <!-- Paste items will be loaded dynamically -->
+                <div class="paste-item">
+                    <h4>Loading recent pastes...</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DataPastes. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.py"></script>
+</body>
+</html>
